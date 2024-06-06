@@ -1,0 +1,10 @@
+docker run --rm \
+	-e MYSQL_ROOT_PASSWORD=root \
+	-e MYSQL_DATABASE=final \
+	-e MYSQL_USER=cse617 \
+	-e MYSQL_PASSWORD=final \
+	-v /home/ubuntu/final/sqld_data:/var/lib/mysql \
+	--net final \
+	--name mysqld \
+	-p 3307:3306 \
+	-d mysql:5.7

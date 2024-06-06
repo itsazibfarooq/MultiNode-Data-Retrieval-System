@@ -1,0 +1,4 @@
+Flask
+todoist-api-python
+cryptography
+python-cas
